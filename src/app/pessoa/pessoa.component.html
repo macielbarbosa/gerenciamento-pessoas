@@ -1,0 +1,3 @@
+<div *ngIf="isEdition; then editionBlock; else registrationBlock"></div>
+<ng-template #editionBlock>Edição de pessoa com id {{ id }}</ng-template>
+<ng-template #registrationBlock>Cadastro de nova pessoa</ng-template>
