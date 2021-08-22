@@ -1,0 +1,22 @@
+.content {
+  font-size: 16px;
+  max-width: 500px;
+  & :not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+.pessoa {
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  & button {
+    visibility: hidden;
+  }
+  &:hover {
+    & button {
+      visibility: visible;
+    }
+  }
+}

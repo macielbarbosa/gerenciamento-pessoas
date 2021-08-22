@@ -1,1 +1,16 @@
-<p>Gerenciamento de pessoas</p>
+<div class="gp-content-header">
+  <h2>Pessoas</h2>
+  <button (click)="cadastrar()" mat-raised-button color="primary">
+    Cadastrar
+  </button>
+</div>
+<div class="content">
+  <div *ngFor="let pessoa of pessoas">
+    <mat-card (click)="editar(pessoa.id)" class="pessoa">
+      <span>{{ pessoa.name }}</span>
+      <button mat-icon-button>
+        <mat-icon>edit</mat-icon>
+      </button>
+    </mat-card>
+  </div>
+</div>
