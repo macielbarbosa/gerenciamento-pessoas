@@ -1,4 +1,4 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/variables.scss";
 
 html,
 body {
@@ -14,4 +14,19 @@ body {
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 30px;
+}
+
+.gp-content-acoes {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  & > :not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: $bp-phone) {
+  .gp-content-header {
+    margin-bottom: 10px;
+  }
 }

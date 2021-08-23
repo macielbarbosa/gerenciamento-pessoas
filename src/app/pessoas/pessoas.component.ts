@@ -14,8 +14,8 @@ export class PessoasComponent implements OnInit {
   constructor(private http: HttpClient, private router: Router) {}
 
   ngOnInit(): void {
-    this.http.get<any>(URL_API).subscribe((data) => {
-      this.pessoas = data;
+    this.http.get<any>(URL_API).subscribe((pessoas) => {
+      this.pessoas = pessoas;
     });
   }
 

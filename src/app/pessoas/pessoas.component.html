@@ -6,9 +6,9 @@
 </div>
 <div class="content">
   <div *ngFor="let pessoa of pessoas">
-    <mat-card (click)="editar(pessoa.id)" class="pessoa">
+    <mat-card class="pessoa">
       <span>{{ pessoa.name }}</span>
-      <button mat-icon-button>
+      <button mat-icon-button (click)="editar(pessoa.id)">
         <mat-icon>edit</mat-icon>
       </button>
     </mat-card>

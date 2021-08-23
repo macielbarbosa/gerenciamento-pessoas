@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 #app {
   min-height: 100vh;
   display: flex;
@@ -12,5 +14,12 @@
   max-width: 1000px;
   margin: 30px 0px 20px;
   width: 100%;
-  min-height: 500px;
+  min-height: 400px;
+}
+
+@media (max-width: $bp-phone) {
+  #app-content {
+    padding: 10px 5px;
+    margin: 0px;
+  }
 }
