@@ -8,6 +8,10 @@
   background-color: rgb(245, 245, 245);
 }
 
+#app-toolbar span {
+  cursor: pointer;
+}
+
 #app-content {
   box-sizing: border-box;
   padding: 30px;
