@@ -68,6 +68,7 @@ export class PessoaComponent implements OnInit {
 
   save(): void {
     if (!this.form.valid) {
+      this.openSnackBar('Por favor, preencha todos os campos.');
       return;
     }
     if (this.isEdition) {

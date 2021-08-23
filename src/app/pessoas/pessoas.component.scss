@@ -11,12 +11,4 @@
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  & button {
-    visibility: hidden;
-  }
-  &:hover {
-    & button {
-      visibility: visible;
-    }
-  }
 }
